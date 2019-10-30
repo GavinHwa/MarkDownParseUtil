@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>@SpringBootApplication</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="markdown.css"/>
+</head>
+<body>
+
+<p>@SpringBootApplication</p>
+
+<p>等价于</p>
+<p>@Configuration</p>
+<p>@EnableAutoConfiguration</p>
+<p>@ComponentScan</p>
+
+<p>exclude排除指定的类，一般用于排除自定义配置</p>
+<p>@SpringBootApplication(exclude=RedisAutoConfiguration.class)</p>
+
+<p>excludeName</p>
+<p>排除指定的类名</p>
+<p>@SpringBootApplication(excludeName=org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration)</p>
+
+<p>scanBasePackages</p>
+<p>扫描指定的包到Spring容器中，参数为数组</p>
+<p>扫描之后的包注册，没扫描的不会注册</p>
+<p>@SpringBootApplication(scanBasePackages="com.blabla.boot.component")</p>
+
+<p>scanBasePackageClasses</p>
+<p>扫描特定的类,同级下的类如果是组件也同样会扫描</p>
+<p>@SpringBootApplication(scanBasePackageClasses="MyComponent.class")</p>
+
+<p>@SpringBootConfiguration</p>
+<p>继承（等效）于@Configuration最终继承于@Component</p>
+<p>在该类中配置bean之后不需要再注册组件</p>
+<p>该类也同样是一个Bean</p>
+
+<p>@EnableAutoConfiguration</p>
+<p>包含exclude和excludeName方法</p>
+<p>帮助SpringBoot应用将所有符合条件的@Configuration配置都加载到当前SpringBoot创建并使用的IoC容器。</p>
+
+</body>
+<script>
+const backgrounds = JSON.parse(localStorage.getItem("articleBackground"));
+$("body").css("background-image","url(image/wallpaper/"+ backgrounds[Math.floor(Math.random()*10)] + ")");
+</script>
+</html>
