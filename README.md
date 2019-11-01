@@ -27,3 +27,6 @@ md.createHtmlFile();
 ```
 
 可通过修改createHtmlFile(String fileName)方法以适应项目需求
+
+2019.11.1
+更改了代码对于链接的处理，现在的链接会正确的生成新页面而非更改原页面。
