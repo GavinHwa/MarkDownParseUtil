@@ -25,3 +25,5 @@ https://github.com/libaoquan95/MarkDownParser
 MarkDownParseUtil md = new MarkDownParseUtil("src\\文件名.md");
 md.createHtmlFile();
 ```
+
+可通过修改createHtmlFile(String fileName)方法以适应项目需求
