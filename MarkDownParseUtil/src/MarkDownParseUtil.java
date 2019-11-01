@@ -540,7 +540,7 @@ public class MarkDownParseUtil {
                     int index2 = line.indexOf(')', index1 + 2);
                     String linkName = line.substring(i + 1, index1);
                     String linkPath = line.substring(index1 + 2, index2);
-                    line = line.replace(line.substring(i, index2 + 1), "<a href='" + linkPath + "'> " + linkName + "</a>");
+                    line = line.replace(line.substring(i, index2 + 1), "<a href='" + linkPath + "' target="_blank"> " + linkName + "</a>");
                 }
             }
 
