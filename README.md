@@ -4,8 +4,8 @@
 
 参考github项目
 
-[使用 java 实现一个简单的 markdown 语法解析器]
-https://github.com/libaoquan95/MarkDownParser
+[使用 java 实现一个简单的 markdown 语法解析器](
+https://github.com/libaoquan95/MarkDownParser)
 
 对该项目进行了简单的改进和复用：
 
